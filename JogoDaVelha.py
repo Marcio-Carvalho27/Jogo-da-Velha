@@ -12,28 +12,29 @@ def printMap(map):
     print(f"2 {map[2][0]} |  {map[2][1]}  |  {map[2][2]}")
 
 def printMapFinal(map):
-    if verify(map) == 1:
+    result = verify(map)
+    if result == 1:
         map[1][0] = map[1][1] = map[1][2] = map[2][0] = map[2][1] = map[2][2] = "   "
         printMap(map)
-    elif verify(map) == 2:
+    elif result == 2:
         map[0][0] = map[0][1] = map[0][2] = map[2][0] = map[2][1] = map[2][2] = "   "
         printMap(map)
-    elif verify(map) == 3:
+    elif result == 3:
         map[1][0] = map[1][1] = map[1][2] = map[0][0] = map[0][1] = map[0][2] = "   "
         printMap(map)
-    elif verify(map) == 4:
+    elif result == 4:
         map[0][1] = map[1][1] = map[2][1] = map[0][2] = map[1][2] = map[2][2] = "   "
         printMap(map)
-    elif verify(map) == 5:
+    elif result == 5:
         map[0][0] = map[1][0] = map[2][0] = map[0][2] = map[1][2] = map[2][2] = "   "
         printMap(map)
-    elif verify(map) == 6:
+    elif result == 6:
         map[0][0] = map[1][0] = map[2][0] = map[0][1] = map[1][1] = map[2][1] = "   "
         printMap(map)
-    elif verify(map) == 7:
+    elif result == 7:
         map[1][0] = map[2][0] = map[2][1] = map[0][1] = map[0][2] = map[1][2] = "   "
         printMap(map)
-    elif verify(map) == 8:
+    elif result == 8:
         map[1][0] = map[0][0] = map[2][1] = map[0][1] = map[2][2] = map[1][2] = "   "
         printMap(map)
 
